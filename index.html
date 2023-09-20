@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pagina</title>
+</head>
+<body>
+    <h1>William Moran Ramirez</h1>
+    <p>Fecha: <span id="fecha"></span></p>
+
+    <script>
+        // JavaScript para mostrar la fecha actual
+        var fechaActual = new Date();
+        var fechaElement = document.getElementById("fecha");
+        var options = { year: 'numeric', month: 'long', day: 'numeric' };
+        fechaElement.textContent = fechaActual.toLocaleDateString('es-ES', options);
+    </script>
+</body>
+</html>
